@@ -1,39 +1,39 @@
-import ResumePDF from "./Srinibas_Biswal_Resume.pdf";
+import ResumePDF from "./20241204172619.pdf";
 import default_avatar from "../../assets/images/baseImages/default_avatar.svg";
 import KloudGin from ".././../assets/images/data/KloudGin.png";
 import Freelance from ".././../assets/images/data/Freelance.png";
 import PayPal from ".././../assets/images/data/PayPal.jpeg";
 
 const user = {
-	firstName: "Srinibas",
-	lastName: "Biswal",
+	firstName: "Ashley 'ashleyriott'",
+	lastName: "Blake",
 	userImage: default_avatar,
 	resume: ResumePDF,
-	email: "srinibasbiswal02@gmail.com",
-	linkedIn: "in/srinibasbiswal",
-	gitHub: "srinibasbiswal",
-	twitter: "srinibasbiswal",
+	email: "ashleyriott@gmail.com",
+	linkedIn: "in/ashleyriott",
+	gitHub: "ashleyriott",
+	twitter: "ashleyriott",
 	aboutMe: {
-		intro: " I'm a Full Stack Software Development Engineer from India.",
+		intro: "XR evangelist, futurist, and strategist.",
 		description:
-			"I enjoy taking up complex problems and converting to an usable format. My major domains are Web Development (React / Angular / Node) and Software Development (Java / Python).",
-		outro: "When I'm not developing any stuff , you will find me re-watching an episode of The Office or exploring a new place.",
+			"I specialize in leadership, communication, and digital strategies to create meaningful connections and drive impactful change. With over 50 projects spanning gaming, emerging tech, and advocacy, I’m passionate about helping teams achieve their dreams while building a more inclusive and equitable world. 🌍",
+		outro: "This space is where I showcase work that matters to me. Feel free to explore, reach out, or leave a comment—I’d love to connect! ✨",
 	},
 	experiences: [
 		{
-			organization: "PayPal",
+			organization: "elsewhere Not-For-Profit",
 			organizationPicture: PayPal,
 			isCurrent: true,
-			startDate: "Oct 2021",
+			startDate: "June 2023",
 			endDate: null,
 			positions: [
 				{
-					positionName: "Software Engineer 2",
-					startDate: "Oct 2021",
+					positionName: "Founder & CEO",
+					startDate: "June 2023",
 					endDate: " Present",
 					isPresent: true,
 					description:
-						"Working as part of the Identity Engineering Team, responsible for the development and maintaining login scenarios in Web and Native experiences. Implemented a long-term architecture for platform convergence in existing node modules, automating tenant onboarding and reducing onboarding time significantly. Migrated legacy C++ components to Node modules with updated UI, improving performance and design aesthetics. Developed an internal tool tailored for efficient upgrades and verification of internal framework versions across multiple micro-services, saving manual effort and reducing the risk of errors. Technologies: ReactJS, JavaScript, Node, GraphQL, Java, RESTful web services, Swift, MySQL",
+						"Founded elsewhereNFP to drive innovation and inclusivity in the games industry through data-driven research and actionable resources. Organized the inaugural Safer Spaces Summit, convening 40+ major industry organizers to share strategies and establish best practices for safety and inclusivity in gaming. Conducted comprehensive surveys at major global gaming events, gathering insights from 1,000+ participants to produce reports that influenced organizational policies and improved industry standards.",
 				},
 			],
 		},
@@ -91,9 +91,9 @@ const user = {
 	education: [
 		{
 			instituteName:
-				"ITER, Siksha 'O' Anusandhan (Deemed to be University)",
-			degree: "Bachelor's Degree in Computer Science and Engineering",
-			year: "2019",
+				"University of Pennsylvania",
+			degree: "Bachelor of Applied Arts and Sciences (BAAS) - Leadership and Communication + Digital Strategies",
+			year: "2024",
 			id: 1,
 		},
 		{
