@@ -1,6 +1,6 @@
 {
-  "name":"Srinibas Biswal | Full Stack Developer",
-  "short_name":"Srinibas Biswal",
+  "name":"Ashley Blake | XR Evangelist & Strategist",
+  "short_name":"Ashley Blake",
   "icons":[
      {
         "src": "favicon.ico",
@@ -19,8 +19,8 @@
      }
   ],
   "start_url": "/",
-  "theme_color":"#ffffff",
-  "background_color":"#ffffff",
+  "theme_color":"#000000",
+  "background_color":"#000000",
   "display":"standalone",
   "scope": "/"
 }
