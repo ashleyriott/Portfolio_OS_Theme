@@ -1,4 +1,5 @@
 import React from "react";
+import "./about.scss";
 import user from "../../../utils/data/user.config";
 
 function Education() {
@@ -8,7 +9,7 @@ function Education() {
 				<div className="container uk-margin-medium-left">
 					{user.education.map((education, index) => {
 						return (
-							<div className="timeline-block " key={index}>
+							<div className="timeline-block" key={index}>
 								<div className="marker"></div>
 								<div className="timeline-content">
 									<p className="uk-text-lead font-color-white">
@@ -16,9 +17,7 @@ function Education() {
 									</p>
 									<span>{education.year}</span>
 									<p className="positon-desc">
-										<p className="positon-desc">
-											{education.degree}
-										</p>
+										{education.degree}
 									</p>
 								</div>
 							</div>

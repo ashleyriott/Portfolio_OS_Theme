@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import avatar from "../../assets/images/baseImages/default_avatar.svg";
 import { Icon, PrimaryButton, TextField } from "@fluentui/react";
 import SocialBlock from "../base/socialBlock";
+import user from "../../utils/data/user.config";
 
 function SignInScreen() {
 	const dispatch = useDispatch();
@@ -12,22 +13,29 @@ function SignInScreen() {
 		dispatch(setSystemState(systemState));
 	};
 
+	const userImage =
+		user.userImage !== undefined &&
+		user.userImage !== null &&
+		user.userImage !== ""
+			? user.userImage
+			: avatar;
+
 	return (
 		<div className="screenHeight SignInOverlay">
 			{/* Sign In Form */}
 			<div className="uk-position-center uk-overlay uk-text-center">
 				<div>
 					<img
-						className="uk-border-circle"
-						src={avatar}
+						className="uk-border-circle signin-avatar"
+						src={userImage}
 						width="200"
 						height="200"
 						alt="User"
 					/>
 				</div>
 				<div>
-					<h1 className="uk-heading-small  font-color-white">
-						Srinibas Biswal
+					<h1 className="uk-heading-small font-color-white">
+						{user.firstName} {user.lastName}
 					</h1>
 				</div>
 				<div>

@@ -4,6 +4,10 @@
 	--color-red: #ff0000;
 	--color-blue: #00a2ed;
 	--color-secondary: rgb(34, 34, 34);
+	--color-accent: #0078d4;
+	--color-accent-light: #2b88d8;
+	--color-surface: rgb(40, 40, 40);
+	--color-surface-light: rgb(50, 49, 48);
 
 	--font-white: rgb(250, 249, 248);
 	--font-light-grey: #a4a4a4;
@@ -12,4 +16,7 @@
 
 	--medium-screen: 640px !important;
 	--small-screen: 960px;
+
+	--transition-fast: 0.15s ease;
+	--transition-normal: 0.25s ease;
 }

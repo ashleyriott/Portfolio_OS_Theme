@@ -19,26 +19,31 @@ function Projects() {
 					>
 						<h3 className="uk-card-title font-color-white">
 							{project.projectName}
-							<TooltipHost
-								content="View Project"
-								delay={TooltipDelay.zero}
-								directionalHint={DirectionalHint.bottomCenter}
-							>
-								<IconButton
-									iconProps={{
-										iconName: "NavigateExternalInline",
-									}}
-									className="link-to-project"
-								/>
-							</TooltipHost>
+							{project.link && (
+								<TooltipHost
+									content="View Project"
+									delay={TooltipDelay.zero}
+									directionalHint={DirectionalHint.bottomCenter}
+								>
+									<IconButton
+										iconProps={{
+											iconName: "NavigateExternalInline",
+										}}
+										className="link-to-project"
+										onClick={() =>
+											window.open(project.link, "_blank")
+										}
+									/>
+								</TooltipHost>
+							)}
 						</h3>
-						<p>{project.description}</p>
+						<p className="project-description">{project.description}</p>
 
 						<p>
 							{project.madeWith.map((stack, stackIndex) => {
 								return (
 									<span
-										className="uk-badge uk-padding-small uk-background-secondary"
+										className="uk-badge uk-padding-small skill-badge"
 										key={stackIndex}
 									>
 										{stack}

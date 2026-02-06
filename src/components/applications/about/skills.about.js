@@ -1,4 +1,5 @@
 import React from "react";
+import "./about.scss";
 import user from "../../../utils/data/user.config";
 
 function Skills() {
@@ -11,12 +12,12 @@ function Skills() {
 				return (
 					<div key={index}>
 						<div className="uk-card uk-card-default uk-card-body uk-border-rounded project-card uk-shadow-large">
-							<p className=" font-color-white">{skill.name}</p>
+							<h4 className="font-color-white">{skill.name}</h4>
 							<div>
 								{skill.values.map((value, valIndex) => {
 									return (
 										<span
-											className="uk-badge uk-padding-small uk-background-secondary uk-margin-small"
+											className="uk-badge uk-padding-small skill-badge"
 											key={valIndex}
 										>
 											{value}
